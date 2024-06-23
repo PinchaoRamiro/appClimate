@@ -1,6 +1,5 @@
 let map;
 let weatherInfo = document.getElementById('weather');
-const weatherbitApiKey = 'b37898868f3b4cb2aeec988f8557772d';
 
 function initMap() {
     // Intentar obtener la ubicación actual del usuario
@@ -119,7 +118,7 @@ function fetchWeatherData(lat, lon, locationName) {
 }
 
 function fetchWeatherbitIcon(lat, lon) {
-    return fetch(`https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=${weatherbitApiKey}`)
+    return fetch(`https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=b37898868f3b4cb2aeec988f8557772d`)
         .then(response => response.json())
         .then(data => {
             if (data && data.data && data.data[0] && data.data[0].weather && data.data[0].weather.icon) {
