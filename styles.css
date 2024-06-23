@@ -5,13 +5,13 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(rgb(117, 96, 96), rgb(85, 85, 194));
-    color: #ffffff; /* Color de texto por defecto */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para cambio de tema */
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
     background: linear-gradient(rgb(231, 49, 49), rgb(90, 90, 240));
-    color: #fff; /* Color de texto del header */
+    color: #fff;
     padding: 10px;
     text-align: center;
 }
@@ -41,7 +41,7 @@ main {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 100px); /* Ajusta según la altura de header y footer */
+    height: calc(100vh - 100px); 
 }
 
 .container-map {
@@ -56,7 +56,7 @@ main {
 .mapa {
     height: 250px;
     background-color: #8ee78e;
-    width: 100%; /* Asegura que el mapa ocupe todo el ancho disponible */
+    width: 100%;
 }
 
 .weather {
@@ -83,7 +83,7 @@ main {
     }
 
     .mapa {
-        height: 200px; /* Ajusta la altura del mapa en pantallas más pequeñas */
+        height: 200px; 
     }
 }
 
@@ -98,7 +98,7 @@ main {
     }
 
     .mapa {
-        height: 150px; /* Ajusta la altura del mapa en pantallas más pequeñas */
+        height: 150px; 
     }
 
     main {
