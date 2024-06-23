@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP WEATHER</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxlO8ILdL4GvaE8wreaAke_-k3Al4V-IM&libraries=places&callback=initMap" async defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>APP WEATHER</h1>
+        <form class="inputDireccion">
+            <input id="autocomplete" placeholder="Enter a location" type="text">
+        </form>
+    </header>
+    <main>
+        <article class="container-map">
+            <div id="map" class="mapa">
+                <!-- Aquí se mostrará el mapa -->
+            </div>
+            <div>
+                <p id="weather">Aquí se mostrará el clima actual</p>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

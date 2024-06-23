@@ -1,0 +1,127 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Cormorant', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(117, 96, 96), rgb(85, 85, 194));
+    color: #ffffff; /* Color de texto por defecto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para cambio de tema */
+}
+
+header {
+    background: linear-gradient(rgb(231, 49, 49), rgb(90, 90, 240));
+    color: #fff; /* Color de texto del header */
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.inputDireccion {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.direccion {
+    padding: 5px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+}
+
+.autocomplete {
+    border-radius: 10px;
+}
+
+main {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Ajusta según la altura de header y footer */
+}
+
+.container-map {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    margin: auto;
+    gap: 20px;
+    width: 70%; 
+}
+
+.mapa {
+    height: 250px;
+    background-color: #8ee78e;
+    width: 100%; /* Asegura que el mapa ocupe todo el ancho disponible */
+}
+
+.weather {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr;
+}
+
+.weather .icon{
+    grid-row-end: auto;
+    border-radius: 100%;
+    grid-area: auto;
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .direccion {
+        width: 150px; 
+    }
+
+    .container-map {
+        padding: 10; 
+    }
+
+    .mapa {
+        height: 200px; /* Ajusta la altura del mapa en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem; 
+    }
+
+    .direccion {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .mapa {
+        height: 150px; /* Ajusta la altura del mapa en pantallas más pequeñas */
+    }
+
+    main {
+        margin: auto;
+    }
+}
+
+@media (max-width: 412px) {
+    h1 {
+        font-size: 1rem; 
+    }
+
+    .direccion {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .mapa {
+        flex-wrap: 0;
+        height: 150px;
+    }
+
+    main {
+        margin: auto;
+    }
+}
