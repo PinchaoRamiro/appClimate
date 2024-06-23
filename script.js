@@ -1,6 +1,6 @@
 let map;
 let weatherInfo = document.getElementById('weather');
-const weatherbitApiKey = 'b37898868f3b4cb2aeec988f8557772d'; // Reemplaza con tu API Key de Weatherbit
+const weatherbitApiKey = 'b37898868f3b4cb2aeec988f8557772d';
 
 function initMap() {
     // Intentar obtener la ubicación actual del usuario
@@ -21,7 +21,7 @@ function initMap() {
                 position: { lat: lat, lng: lon }
             });
 
-            // Llamar a la API de Open-Meteo para obtener datos del clima
+            // Llamar a la API para obtener datos del clima
             fetchWeatherData(lat, lon, 'Tu ubicación actual');
         }, error => {
             console.error('Error al obtener la ubicación', error);
@@ -66,7 +66,7 @@ function initMap() {
         const lat = place.geometry.location.lat();
         const lon = place.geometry.location.lng();
 
-        // Llamar a la API de Open-Meteo para obtener datos del clima
+        // Llamar a la para obtener datos del clima
         fetchWeatherData(lat, lon, place.formatted_address);
     });
 }
